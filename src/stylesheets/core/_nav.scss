@@ -1,0 +1,71 @@
+// Copyright 2016 VS Networks LLC, All Rights Reserved.
+// VS Networks CONFIDENTIAL
+
+// --- Imports -----------------------------------------------------------------
+
+@import "_variables";
+
+
+// --- Styles ------------------------------------------------------------------
+
+@mixin nav-button($_selector, $_filename, $_activeFilename) {
+    #{$_selector} {
+        background-image: url(#{$_filename});
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:active {
+            background-image: url(#{$_activeFilename});
+        }
+
+        &.current-page {
+            background-image: url(#{$_activeFilename});
+        }
+    }
+}
+
+nav.nav-bar {
+    background-color: #ddd;
+
+    &.left,
+    &.right {
+        height: $screen-height;
+        padding: 25px 15px;
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: $nav-bar-vert-width;
+        z-index: 1000;
+    }
+
+    &.right {
+        left: $screen-width - $nav-bar-vert-width;
+    }
+}
+
+
+// .nav-button {
+//     height: 66px;
+//     margin-bottom: 14px;
+//     width: 70px;
+
+//     @include nav-button(
+//         "&.nav-home",
+//         "../img/nav/home-icon.png",
+//         "../img/nav/home-icon-orange.png");
+
+//     @include nav-button(
+//         "&.nav-back",
+//         "../img/nav/back-icon.png",
+//         "../img/nav/back-icon-orange.png");
+
+//     @include nav-button(
+//         "&.nav-mail",
+//         "../img/nav/mail-icon.png",
+//         "../img/nav/mail-icon-orange.png");
+
+//     @include nav-button(
+//         "&.nav-quick-pick",
+//         "../img/nav/quick-pick-icon.png",
+//         "../img/nav/quick-pick-icon-orange.png");
+// }

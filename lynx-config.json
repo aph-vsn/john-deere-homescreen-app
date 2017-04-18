@@ -1,0 +1,17 @@
+{
+    "package_version": 2,
+    "revision": 1,
+    "tag": "hello_lynx",
+    "name": "hello_lynx",
+    "display_name": "Hello, LYNX!",
+    "description": "A skeleton project for a VS Networks LYNX application using React",
+    "preview": "preview.png",
+    "is_interactive": true,
+    "is_passive": true,
+    "max_duration": 30000,
+    "app_uuid": "dc9ac3e2-cdf3-43c5-92b3-54667f123fe6",
+    "app_class": ["hello_lynx"],
+    "starting_points": [
+        { "name": "default", "path": "index.html" }
+    ]
+}

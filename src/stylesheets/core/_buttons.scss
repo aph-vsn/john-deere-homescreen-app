@@ -1,0 +1,47 @@
+// Copyright 2016 VS Networks LLC, All Rights Reserved.
+// VS Networks CONFIDENTIAL
+
+.btn {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Univers-Bold";
+    font-size: 1.5em;
+    padding: 1.2em 1em;
+    color: #f58220;
+    border: none;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 0.2em;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: none;
+}
+
+.btn:active {
+  background-color: #fff;
+  color: #d1d3d4;
+}
+
+.btn-inverse {
+    background: #f58220;
+    color: #fff;
+}
+
+.btn-inverse:active {
+  background: #ff7f1f;
+  color: #fff;
+}

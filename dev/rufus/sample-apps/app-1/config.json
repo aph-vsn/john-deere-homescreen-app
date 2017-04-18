@@ -1,0 +1,17 @@
+{
+    "package_version": 2,
+    "revision": 1,
+    "tag": "app-1",
+    "name": "app-1",
+    "display_name": "App 1",
+    "description": "App 1",
+    "preview": "preview.png",
+    "is_interactive": true,
+    "is_passive": true,
+    "max_duration": 30000,
+    "app_uuid": "be4eb149-9c74-48f1-b28d-c298425e0f9d",
+    "app_class": ["app_1"],
+    "starting_points": [
+        { "name": "default", "path": "index.html" }
+    ]
+}

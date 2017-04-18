@@ -1,0 +1,50 @@
+// Copyright 2016 VS Networks LLC, All Rights Reserved.
+// VS Networks CONFIDENTIAL
+
+// --- Imports -----------------------------------------------------------------
+
+@import "core/_variables";
+@import "core/_reset";
+@import "core/_buttons";
+@import "core/_forms";
+@import "core/_grid";
+@import "core/_nav";
+@import "core/_debug";
+// @import "_presentational";
+
+
+// --- Main Styles -------------------------------------------------------------
+
+// Adjust the position of the .app-content element based on where the nav
+// bar is positioned (if it exists).
+.app-content {
+    position: absolute;
+
+    // If .app-content occurs after a vertical nav bar...
+    nav.nav-bar.left ~ &,
+    nav.nav-bar.right ~ & {
+        background-color: #fff;
+        display: block;
+        height: $screen-height;
+        width: $screen-width - $nav-bar-vert-width;
+    }
+
+    // If .app-content occurs after a left-justified vertical nav bar...
+    nav.nav-bar.left ~ & {
+        left: $nav-bar-vert-width;
+    }
+
+    // If .app-content occurs after a right-justified vertical nav bar...
+    nav.nav-bar.right ~ & {
+        left: 0;
+    }
+}
+
+
+//  nav.nav-bar.left ~ .app-content {
+//     background-color: pink;
+
+//     display: block;
+//     height: $screen-height;
+//     width: $screen-width - $vert-nav-bar-width;
+// }

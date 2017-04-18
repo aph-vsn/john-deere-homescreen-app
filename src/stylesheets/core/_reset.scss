@@ -1,0 +1,66 @@
+// Copyright 2016 VS Networks LLC, All Rights Reserved.
+// VS Networks CONFIDENTIAL
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 1080px;
+    overflow: hidden;
+    position: relative;
+    width: 1920px;
+}
+
+html {
+    background-color: #000;
+    user-select: none; // Disable text-highlighting
+}
+
+body {
+    background-color: #fff;
+    color: #444;
+    font-family: Roboto, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    line-height: 1.6rem;
+    margin: 0;
+    word-spacing: 0.01rem;
+}
+
+a {
+    -webkit-touch-callout: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a img {
+    border: 0;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:active {
+    color: #f58220;
+}
+
+li,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    // Disable images from being dragged
+    -webkit-user-drag: none;
+    user-drag: none;
+    top: 0;
+    left: 0;
+    vertical-align: top;
+}

@@ -1,0 +1,101 @@
+back-end:
+    comm:
+        app-message:
+            format: raw
+            output: console
+        feed-config-file: feed-data.yaml
+        user-event:
+            format: raw
+            output: console
+    device:
+        audio:
+            is-muted: false
+            volume: 80
+        hostname: test
+        input:
+            has-mouse: false
+            has-touch: true
+        network:
+            - address: "10.0.0.100"
+              carrier: true
+              gateway: "10.0.0.1"
+              mac-address: "a1:b2:c3:d4:e5:f6"
+              name: eth0
+              netmask: "255.255.0.0"
+              type: wired
+        stats:
+            cpuTemp: 500
+            displayModel: "Generic Display"
+            gpuTemp: 20
+            uptime: 500
+        wifi:
+            - bssid: "a1:b2:c3:d4:e5:f6"
+              essid: mywifi
+              frequency: 2452
+              security:
+                  - WPA2-PSK
+              signal-level: -64
+              vendor: "Ruckus Wireless"
+    location:
+        address:
+            address-line-one: "123 Fake Street"
+            city: Lancaster
+            postal-code: "17601"
+            state: PA
+            time-zone: US/Eastern
+        geo-location:
+            latitude: 0
+            longitude: 0
+    media:
+        - path: ./dist
+          home: true
+          max-depth: 2
+          search-paths:
+              - ./
+              - ../../src/static
+          type: user
+        - path: ./dev/rufus/sample-apps/app-1
+          home: false
+          max-depth: 2
+          type: user
+        - path: ./dev/rufus/sample-apps/app-2
+          home: false
+          max-depth: 2
+          type: user
+        - path: ./dev/rufus/sample-apps/app-3
+          home: false
+          max-depth: 2
+          type: user
+    msys:
+        audio:
+            is-muted: true
+            volume: 100
+        config:
+            current-mode: interactive
+            paired: true
+            scid: 1234
+            stack: test
+            web-access-token: abcdef
+        connection:
+            connected: true
+            last-heartbeat: "2016-01-01T00:00:00Z"
+        platform-info:
+            name: rufus-dev
+            os-release: rufus
+            version: "0.0.0.0"
+        presentation:
+            browser-white-list: []
+            show-mode: ~
+        update:
+            download-status: up-to-date
+            received-bytes: 0
+            total-bytes: 0
+
+logging:
+    format: log-line
+    output: console
+rufus:
+    http-server:
+        address: "0.0.0.0"
+        port: 8081
+    pin-app-auth-token: true
